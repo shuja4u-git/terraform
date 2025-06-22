@@ -10,6 +10,7 @@ resource "aws_instance" "instance1" {
 resource "aws_instance" "instance2" {
   ami           = var.stg-ami
   instance_type = var.stg-instance_type
+  provider      = aws.east2
 
   tags = {
     Name = "terraform-instance2"
