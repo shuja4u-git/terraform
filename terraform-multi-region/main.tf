@@ -7,8 +7,7 @@ resource "aws_instance" "instance1" {
     Name = "terraform-instance1"
   }
 }
-resource "aws_instance" "instance1" {
-  provider      = aws.east2
+resource "aws_instance" "instance2" {
   ami           = var.stg-ami
   instance_type = var.stg-instance_type
 
